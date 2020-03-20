@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Hello.css';
 
-function Hello (){
-   
-  return (
-    <div>
-      <h1>Hello World</h1>
-      <p>Welcome to React</p>
-    </div>
-  );
-  
+class Hello extends React.Component {  
+  render() {
+    return (
+      <div className='f2 tc'>
+        <h1>Hello World</h1>
+        <p>{this.props.greeting}</p>
+      </div>
+    );
+  }
 }
 
 export default Hello;
