@@ -9,14 +9,14 @@ class App extends Component {
     super()
     this.state = {
       cats: cats,
-      searchfieild: ''
+      searchfield: ''
     }
   }
 
-  onSearchChange(event) {
-    console.log(event.target.value);
-    const filteredCats = this.state.cats.filter(cats => {
-      return cats.name.toLowerCase().includes(searchfieild.toLowerCase())
+  onSearchChange = (event) => {
+    this.setState({ searchfield: event.target.value })
+    const filteredCats = this.state.cats.filter(cat => {
+      return cat.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
     })
   }
 
