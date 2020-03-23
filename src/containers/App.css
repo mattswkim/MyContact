@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Moony Cat';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Moony Cat'), url('MOONYCAT.woff') format('woff');
+  }
+
+h1 {
+  font-family: 'Moony Cat';
+  font-weight: 200;
+  color: #6b421d;
+}

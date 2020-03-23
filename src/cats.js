@@ -20,7 +20,7 @@ export const cats = [{
     id: 4,
     name: 'Patricia Lebsack',
     username: 'Karianne',
-    email: 'Julianne.OConner@kory.org'
+    email: 'Julianne@kory.org'
   },
   {
     id: 5,
@@ -30,7 +30,7 @@ export const cats = [{
   },
   {
     id: 6,
-    name: 'Mrs. Dennis Schulist',
+    name: 'Dennis Schulist',
     username: 'Leopoldo_Corkery',
     email: 'Karley_Dach@jasper.info'
   },
@@ -42,7 +42,7 @@ export const cats = [{
   },
   {
     id: 8,
-    name: 'Nicholas Runolfsdottir V',
+    name: 'Nicholas Runolf',
     username: 'Maxime_Nienow',
     email: 'Sherwood@rosamond.me'
   },
@@ -50,7 +50,7 @@ export const cats = [{
     id: 9,
     name: 'Glenna Reichert',
     username: 'Delphine',
-    email: 'Chaim_McDermott@dana.io'
+    email: 'McDermott@dana.io'
   },
   {
     id: 10,
