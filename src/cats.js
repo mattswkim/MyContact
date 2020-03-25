@@ -1,12 +1,12 @@
 export const cats = [{
     id: 1,
-    name: 'Leanne Graham',
+    name: 'Kate Lee',
     username: 'Bret',
     email: 'Sincere@april.biz'
   },
   {
     id: 2,
-    name: 'Ervin Howell',
+    name: 'Matthew Kim',
     username: 'Antonette',
     email: 'Shanna@melissa.tv'
   },
@@ -59,3 +59,5 @@ export const cats = [{
     email: 'Rey.Padberg@karina.biz'
   }
 ];
+
+export default cats;

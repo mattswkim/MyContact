@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Cardlist from '../components/Cardlist';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import cats from '../cats';
 import ErrorBoundary from '../components/ErrorBoundry';
 import './App.css';
 
@@ -10,16 +11,16 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      cats: [],
+      cats: cats,
       searchfield: ''
     }
   }
 
-  componentDidMount() {
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then(response => response.json())
-    .then(users => this.setState({ cats: users}))
-  }
+  // componentDidMount() {
+  //   fetch('https://jsonplaceholder.typicode.com/users')
+  //   .then(response => response.json())
+  //   .then(users => this.setState({ cats: users}))
+  // }
 
   onSearchChange = (event) => {
     this.setState({ searchfield: event.target.value })
@@ -36,11 +37,11 @@ class App extends Component {
         <div className='tc ma4'>
           <h1 className='f1'>My Cat Friends Contact</h1>
           <SearchBox searchChange={this.onSearchChange}/>
-          <Scroll>
+          
             <ErrorBoundary>
               <Cardlist cats={filteredCats}/>
             </ErrorBoundary>
-          </Scroll>
+          
         </div>
       );
     
