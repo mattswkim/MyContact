@@ -37,7 +37,6 @@ class App extends Component {
         <div className='tc ma4'>
           <h1 className='f1'>My Cat Friends Contact</h1>
           <SearchBox searchChange={this.onSearchChange}/>
-          
             <ErrorBoundary>
               <Cardlist cats={filteredCats}/>
             </ErrorBoundary>
